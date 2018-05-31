@@ -9,7 +9,7 @@ The id of the nodes in the graph is given in their order of level order traversa
 
 # How it works
 
-nested if statements have some sort of recursive definition (since they form a decision TREE). So I used a stack to identify which statements were imbedded which. each block of code is considered as a node object defined in node.py. the position of the opening brace of that block identifies it uniquely. so, I save it in node.start and the start of the block that contains it in node.parent.
+Nested if statements have some sort of recursive definition (since they form a decision TREE). So I used a stack to identify which statements were imbedded which. each block of code is considered as a node object defined in node.py. the position of the opening brace of that block identifies it uniquely. so, I save it in node.start and the start of the block that contains it in node.parent.
 
 Then I filter out the blocks that are if,else if, or else statements and save them to a new array.
 
